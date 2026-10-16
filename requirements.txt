@@ -1,0 +1,20 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+redis>=5
+langgraph>=1
+langgraph-checkpoint-redis>=0.5
+langchain>=1
+langchain-openai>=1
+langchain-anthropic>=1
+rank-bm25>=0.2
+pydantic>=2.10
+python-dotenv>=1
+arize-phoenix-otel>=0.10
+openinference-instrumentation-langchain>=0.1
+httpx>=0.27
+tiktoken>=0.9
+
+# Solo para correr los tests
+pytest>=8
+pytest-asyncio>=0.24
+fakeredis>=2.20

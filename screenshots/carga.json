@@ -1,0 +1,82 @@
+{
+  "peticiones": 5,
+  "duracion_total_s": 2.665,
+  "latencia_p50_s": 2.615,
+  "latencia_p95_s": 2.655,
+  "latencia_media_s": 2.129,
+  "costo_medio_por_ejecucion_usd": 0.000961,
+  "costo_total_usd": 0.004805,
+  "tokens_totales": 23530,
+  "trabajos": [
+    {
+      "job_id": "cbb83753d42240a8a228928d9730b0f2",
+      "status": "DONE",
+      "critica": true,
+      "latencia_s": 2.664,
+      "metricas": {
+        "llamadas_modelo": 11,
+        "tokens_entrada": 4165,
+        "tokens_salida": 567,
+        "latencia_modelo_s": 0.552,
+        "duracion_s": 1.314
+      },
+      "costo_usd": 0.000965
+    },
+    {
+      "job_id": "19ef6727c71c4b5eb8b2d4730ec71a70",
+      "status": "DONE",
+      "critica": false,
+      "latencia_s": 1.406,
+      "metricas": {
+        "llamadas_modelo": 11,
+        "tokens_entrada": 4100,
+        "tokens_salida": 567,
+        "latencia_modelo_s": 0.515,
+        "duracion_s": 1.255
+      },
+      "costo_usd": 0.000955
+    },
+    {
+      "job_id": "f92ecc9bb6e144929ad30189502d45ca",
+      "status": "DONE",
+      "critica": true,
+      "latencia_s": 2.617,
+      "metricas": {
+        "llamadas_modelo": 11,
+        "tokens_entrada": 4165,
+        "tokens_salida": 567,
+        "latencia_modelo_s": 0.529,
+        "duracion_s": 1.276
+      },
+      "costo_usd": 0.000965
+    },
+    {
+      "job_id": "6aee399347db4aafbd8a86c9569391cf",
+      "status": "DONE",
+      "critica": false,
+      "latencia_s": 1.341,
+      "metricas": {
+        "llamadas_modelo": 11,
+        "tokens_entrada": 4100,
+        "tokens_salida": 567,
+        "latencia_modelo_s": 0.52,
+        "duracion_s": 1.262
+      },
+      "costo_usd": 0.000955
+    },
+    {
+      "job_id": "4a660b38c41c40adb71a7385e8390d57",
+      "status": "DONE",
+      "critica": true,
+      "latencia_s": 2.615,
+      "metricas": {
+        "llamadas_modelo": 11,
+        "tokens_entrada": 4165,
+        "tokens_salida": 567,
+        "latencia_modelo_s": 0.5,
+        "duracion_s": 1.31
+      },
+      "costo_usd": 0.000965
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+services:
+  redis:
+    # Redis Stack incluye RedisJSON y RediSearch, que necesita el checkpointer de LangGraph (RedisSaver).
+    image: redis/redis-stack-server:7.4.0-v3
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis-data:/data
+
+  phoenix:
+    image: arizephoenix/phoenix:version-12.9.0
+    ports:
+      - "6006:6006"   # interfaz web y recepción de trazas OTLP por HTTP
+      - "4317:4317"   # recepción de trazas OTLP por gRPC
+
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379
+      PHOENIX_COLLECTOR_ENDPOINT: http://phoenix:6006/v1/traces
+    depends_on:
+      - redis
+      - phoenix
+    profiles: ["api"]
+
+volumes:
+  redis-data:
